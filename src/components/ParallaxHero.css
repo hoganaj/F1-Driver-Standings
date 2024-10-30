@@ -1,0 +1,90 @@
+.parallax-hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.parallax-hero::after {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 26, 48, 0) 82.68%, #00162b);
+}
+
+.parallax-background, .parallax-foreground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+}
+
+.parallax-background {
+  z-index: 1;
+}
+
+.parallax-foreground {
+  z-index: 2;
+}
+
+.parallax-content {
+  position: relative;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 2rem;
+  text-align: left;
+}
+
+.parallax-title {
+  font-size: 8vw;
+  font-family: 'Futura PT', Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  padding: 0 1rem 0 0;
+  max-width: 90vw;
+  margin: 0;
+}
+
+.parallax-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.parallax-date, .parallax-location {
+  display: flex;
+  align-items: center;
+}
+
+.parallax-date::before, .parallax-location::before {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: contain;
+  margin-right: 0.5rem;
+}
+
+.parallax-date::before {
+  background-image: url('../images/calendar.png');
+}
+
+.parallax-location::before {
+  background-image: url('../images/monaco.png');
+}
