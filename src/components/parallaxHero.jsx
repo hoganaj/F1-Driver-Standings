@@ -4,6 +4,7 @@ import './ParallaxHero.css';
 const ParallaxHero = ({ backgroundImage, foregroundImage, title, date, location }) => {
   const [offset, setOffset] = useState(0);
 
+  // attach an event listener so current scroll position(offset) gets updated
   useEffect(() => {
     const handleScroll = () => {
       setOffset(window.scrollY);

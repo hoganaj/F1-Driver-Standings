@@ -4,6 +4,8 @@ import './DriverStandings.css';
 const DriverStandings = () => {
   const [standings, setStandings] = useState([]);
 
+  // fetch standings from api endpoint on page load - api key in .env file
+
   useEffect(() => {
     const fetchStandings = async () => {
       try {
@@ -40,7 +42,7 @@ const DriverStandings = () => {
           <tr>
             <th>Position</th>
             <th>Driver</th>
-            <th>Team</th>
+            <th>Constructor</th>
             <th>Points</th>
           </tr>
         </thead>

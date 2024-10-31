@@ -6,6 +6,9 @@
   align-items: center;
   justify-content: center;
   color: white;
+  padding: 0;
+  margin: 0;
+  top: 0;
 }
 
 .parallax-hero::after {
@@ -48,7 +51,7 @@
 
 .parallax-title {
   font-size: 8vw;
-  font-family: 'Futura PT', Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   color: white;

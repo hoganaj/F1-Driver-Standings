@@ -2,22 +2,3 @@
   text-align: center;
   background-color: #001a30;
 }
-
-.App-logo {
-  height: 36px;
-  width: 208px;
-  object-fit: contain;
-  object-position: left top;
-}
-
-.App-header {
-  display: flex;
-  align-items: center;
-  padding: 1rem;
-  position: fixed;
-  z-index: 999;
-}
-
-.App-link {
-  color: #61dafb;
-}

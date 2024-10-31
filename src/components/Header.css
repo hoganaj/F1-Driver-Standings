@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  z-index: 999;
+}
+
+.header-logo {
+  height: 36px;
+  width: 208px;
+  object-fit: contain;
+  object-position: left top;
+}
